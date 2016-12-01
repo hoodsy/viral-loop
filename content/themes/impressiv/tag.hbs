@@ -1,0 +1,13 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The main content area on the homepage }}
+<main id="content" class="content tag-template" role="main">
+    {{> "tag-header" name=tag.name tagUrl=(concat '/tag/' tag.name '') iconPath=(concat 'images/icons/icon-' tag.name '.svg')}}
+    {{#get "posts" include="tags,author" filter="tags:{{tag.name}}"}}
+        {{tag.name}}
+      {{#foreach posts}}
+        {{> "post-preview"}}
+      {{/foreach}}
+    {{/get}}
+</main>

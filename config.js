@@ -3,6 +3,7 @@
 
 // Ghost runs in `development` mode by default. Full documentation can be found at http://support.ghost.org/config/
 
+require('./helpers')()
 var path = require('path'),
     config;
 
@@ -11,7 +12,7 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://my-ghost-blog.com',
+        url: 'https://impressiv.io',
         mail: {},
         database: {
             client: 'sqlite3',

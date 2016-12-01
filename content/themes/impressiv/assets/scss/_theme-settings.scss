@@ -1,0 +1,167 @@
+// Typefaces
+// --
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('../fonts/HVD Fonts - BrandonText-Regular.otf') format('opentype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('../fonts/HVD Fonts - BrandonText-RegularItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('../fonts/HVD Fonts - BrandonText-Thin.otf') format('opentype');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('../fonts/HVD Fonts - BrandonText-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('../fonts/HVD Fonts - BrandonText-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('../fonts/HVD Fonts - BrandonText-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('../fonts/HVD Fonts - BrandonText-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('../fonts/HVD Fonts - BrandonText-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('../fonts/HVD Fonts - BrandonText-Black.otf') format('opentype');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('../fonts/HVD Fonts - BrandonText-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+// font family
+$main-font: 'Brandon Text', sans-serif;
+$headers-font: 'Brandon Text', sans-serif;
+
+
+// Palette - Primary
+// --
+$red: #F47577;
+$purple: #8989A4;
+$blue: #87CDFE;
+
+// Palette - Grayscale
+// --
+$gray-text: #32323C;
+$gray-darkest: #4B4B55;
+$gray-darker: #6E6E78;
+$gray-dark: #8B8B93;
+
+$gray-light: #D3D3D5;
+$gray-lighter: #DFDFE0;
+$gray-lightest: #EAEAEA;
+$white: #fff;
+
+
+// colors
+// you can also change standard Foundation colors
+
+$color-main-dark: $gray-text;
+$color-main-light: $white;
+$color-main-contrast: $red;
+
+// $body-border-width: rem-calc(15);
+$body-border-width: 0;
+
+// Foundation overwrites
+//
+// You can do this in the _foundation-settings.scss file
+// just uncomment and edit some parts
+// or you can copy it here like the ones below
+
+$primary-color: $color-main-contrast;
+
+$row-width: rem-calc(800);
+
+$body-font-family: $main-font;
+
+$header-font-family: $headers-font;
+$header-font-weight: 700;
+$header-font-color: $color-main-dark;
+
+$paragraph-font-size: 1.125rem;
+$paragraph-line-height: 1.7;
+
+$anchor-text-decoration: none;
+
+$h1-font-size: rem-calc(64);
+$h2-font-size: rem-calc(40);
+$h3-font-size: rem-calc(32);
+$h4-font-size: rem-calc(23);
+$h5-font-size: rem-calc(18);
+$h6-font-size: 1rem;
+
+$icon-size: rem-calc(30);
+
+.fa {
+  font-size: $icon-size !important;
+}
+
+// Layout
+// --
+$padding-horizontal: 10px;
+$padding-vertical: 20px;
+$padding-vertical-small: 10px;
+
+$article-image: 100vw;
+
+// Buttons
+// --
+$btn-radius: 5px;
+
+.btn-social-media {
+  display: inline-block;
+  padding: 10px 25px;
+  margin-right: 25px;
+  border-radius: $btn-radius;
+  background: $gray-darkest;
+  text-decoration: none;
+  color: transparent;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+// custom theme mixins
+// example:
+// clearfix usage:
+//  .some-div {
+//      ...
+//      @extend %clearfix;
+//  }
+
+%clearfix {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
