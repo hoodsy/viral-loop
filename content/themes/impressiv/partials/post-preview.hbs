@@ -1,0 +1,20 @@
+<div class="post-container">
+  <a href="{{url}}">
+    <article class="{{post_class}} {{#if image}}" style="background: url({{image}}); background-size: cover; {{else}}no-cover{{/if}}">
+    </article>
+  </a>
+  
+  <footer class="post-meta">
+    <h1 class="post-title">{{title}}</h1>
+    <div class="post-author-date">
+      {{author}} - 
+      <time class="post-date"
+            datetime="{{date format='YYYY-MM-DD'}}">
+        {{date format="MMM DD, YYYY"}}
+      </time>
+    </div>
+    <div class="post-tags">
+      {{tags separator=""}}
+    </div>
+  </footer>
+</div>

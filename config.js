@@ -3,6 +3,7 @@
 
 // Ghost runs in `development` mode by default. Full documentation can be found at http://support.ghost.org/config/
 
+require('./helpers')()
 var path = require('path'),
     config;
 

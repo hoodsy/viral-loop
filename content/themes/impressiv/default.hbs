@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8">
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles - Foundation 5 included}}
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{asset "css/style.css"}}">
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+
+    {{! Modernizr }}
+    <script src="{{asset "js/vendor/modernizr.js"}}"></script>
+</head>
+<body class="{{body_class}}">
+
+    {{! Everything else gets inserted here }}
+    <nav class="main-nav">
+        {{> "logo"}}
+        {{> "menu-activator-icon"}}
+    </nav>
+
+    {{{body}}}
+
+    {{> "footer"}}
+    
+    {{#if @blog.navigation}}
+        {{navigation}}
+    {{/if}}
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript files }}
+    <script type="text/javascript" src="{{asset "js/vendor/jquery-2.1.4.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/vendor/foundation.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/vendor/background-check.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/vendor/smoothscroll.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/abc.js"}}"></script>
+
+</body>
+</html>

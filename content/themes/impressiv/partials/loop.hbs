@@ -1,0 +1,32 @@
+{{! This is the post loop - each post will be output using this markup }}
+{{#get "posts" limit="3" include="tags,author" filter="featured:true"}}
+  {{> "tag-header" name="featured" url="/" iconPath="images/icons/icon-featured.svg"}}
+  {{#foreach posts}}
+    {{> "post-preview"}}
+  {{/foreach}}
+{{/get}}
+
+{{#get "posts" limit="3" include="tags,author" filter="tags:politics"}}
+  {{> "tag-header" name="politics" tagUrl="/tag/politics" iconPath="images/icons/icon-politics.svg"}}
+  {{#foreach posts}}
+    {{> "post-preview"}}
+  {{/foreach}}
+{{/get}}
+
+{{#get "posts" limit="3" include="tags,author" filter="tags:nba"}}
+  {{> "tag-header" name="nba" tagUrl="/tag/nba" iconPath="images/icons/icon-nba.svg"}}
+  {{#foreach posts}}
+    {{> "post-preview"}}
+  {{/foreach}}
+{{/get}}
+
+{{#get "posts" limit="3" include="tags,author" filter="tags:startups"}}
+  {{> "tag-header" name="startups" tagUrl="/tag/startups" iconPath="images/icons/icon-startups.svg"}}
+  {{#foreach posts}}
+    {{> "post-preview"}}
+  {{/foreach}}
+{{/get}}
+
+
+{{! Previous/next page links - displayed on every page - this is a custom pagination partial}}
+{{!-- {{pagination}} --}}
