@@ -395,6 +395,13 @@ body {
     }
 }
 
+.page {
+    padding: $padding-vertical $padding-horizontal;
+    p {
+        margin: 0;
+    }
+}
+
 // author info box in post view page
 .author-info {
     padding: 0;
