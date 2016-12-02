@@ -6,25 +6,10 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-{{!-- <nav class="main-nav">
-    <a href="{{@blog.url}}" class="header-back-btn js-bg-check left">
-        <i class="fa fa-chevron-left"></i> Home
-    </a>
-    {{> "menu-activator-icon"}}
-</nav> --}}
-{{!-- <header class="post-view-header js-blog-bg-image {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    <div class="post-header-content">
-        <h1 class="post-title js-bg-check">{{title}}</h1>
-        <section class="post-meta js-bg-check">
-            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-        </section>
-    </div>
-</header> --}}
-
 <article class="post-view-header {{#if image}}" style="background: url({{image}}); background-size: cover; {{else}}no-cover{{/if}}">
 </article>
 
-<header class="post-meta">
+<header class="post-meta row">
     <h1 class="post-title">{{title}}</h1>
     <div class="post-author-date">
     {{author}} - 

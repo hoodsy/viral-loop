@@ -4,17 +4,19 @@
     </article>
   </a>
   
-  <footer class="post-meta">
-    <h1 class="post-title">{{title}}</h1>
-    <div class="post-author-date">
-      {{author}} - 
-      <time class="post-date"
-            datetime="{{date format='YYYY-MM-DD'}}">
-        {{date format="MMM DD, YYYY"}}
-      </time>
-    </div>
-    <div class="post-tags">
-      {{tags separator=""}}
-    </div>
-  </footer>
+  <div class="meta-container">
+    <footer class="post-meta">
+      <h1 class="post-title">{{title}}</h1>
+      <div class="post-author-date">
+        {{author}} - 
+        <time class="post-date"
+              datetime="{{date format='YYYY-MM-DD'}}">
+          {{date format="MMM DD, YYYY"}}
+        </time>
+      </div>
+      <div class="post-tags">
+        {{tags separator=""}}
+      </div>
+    </footer>
+  </div>
 </div>
