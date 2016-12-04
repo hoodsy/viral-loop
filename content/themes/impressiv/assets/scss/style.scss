@@ -128,12 +128,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    display: flex;
+    align-items: center;
     .element-light {
-        color: $color-main-light;
+        color: $color-main-light !important;
     }
     .element-dark,
     &.no-cover {
-        color: $color-main-dark;
+        color: $color-main-light !important;
     }
     h1, h2, h3, h4, h5, h6 {
         color: inherit;
@@ -511,6 +513,14 @@ body {
     .blog-logo {
         margin-bottom: $padding-vertical;
     }
+    .footer-meta {
+        display: flex;
+        margin-top: $padding-vertical;
+    }
+    .footer-policy {
+        margin-left: $padding-horizontal * 8;
+        color: $color-main-light;
+    }
 }
 
 // pagination
@@ -646,7 +656,10 @@ body {
         height: 60%;
     }
     .blog-logo {
-        margin-bottom: $padding-vertical * 4;
+        margin-bottom: $padding-vertical * 2.5;
+    }
+    .social-media-btns {
+        margin-top: $padding-vertical * 2.5;
     }
     ul {
         list-style: none;
@@ -660,9 +673,6 @@ body {
         li {
             display: block;
             margin-bottom: $padding-vertical;
-            &:last-child {
-                margin-bottom: $padding-vertical * 4;
-            }
             a {
                 font-weight: 500;
                 display: block;

@@ -10,17 +10,21 @@
 </article>
 
 <header class="post-meta row">
+
     <h1 class="post-title">{{title}}</h1>
+    
     <div class="post-author-date">
-    {{author}} - 
-    <time class="post-date"
-          datetime="{{date format='YYYY-MM-DD'}}">
-      {{date format="MMM DD, YYYY"}}
-    </time>
+        {{author}} - 
+        <time class="post-date"
+              datetime="{{date format='YYYY-MM-DD'}}">
+          {{date format="MMM DD, YYYY"}}
+        </time>
     </div>
+
     <div class="post-tags">
-    {{tags separator=""}}
+        {{tags separator=""}}
     </div>
+
     <section class="social-media-btns">
       <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
          onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"
@@ -35,6 +39,7 @@
              alt="Impressiv Facebook" />
       </a>
     </section>
+
 </header>
 
 
@@ -45,41 +50,6 @@
         <section class="post-content row">
             <div class="small-12 columns">{{content}}</div>
         </section>
-{{!-- 
-        <footer class="post-footer row">
-            <div class="small-12 columns">
-                <section class="post-tags">
-                    {{tags separator=""}}
-                </section>
-            </div>
-        </footer>
-
-        <div class="row post-prev-next-pagination">
-            <div class="prev small-6 columns text-left">
-                {{#prev_post}}
-                    <div class="prev-next-label">
-                        <a href="{{url}}">
-                            <i class="fa fa-angle-double-left"></i> Previous
-                        </a>
-                    </div>
-                    <a href="{{url}}" class="title">
-                        {{title}}
-                    </a>
-                {{/prev_post}}
-            </div>
-            <div class="next small-6 columns text-right">
-                {{#next_post}}
-                    <div class="prev-next-label">
-                        <a href="{{url}}">
-                            Next <i class="fa fa-angle-double-right"></i>
-                        </a>
-                    </div>
-                    <a href="{{url}}" class="title">
-                        {{title}}
-                    </a>
-                {{/next_post}}
-            </div>
-        </div> --}}
 
         {{! Everything inside the #author tags pulls data from the author }}
         {{#author}}
