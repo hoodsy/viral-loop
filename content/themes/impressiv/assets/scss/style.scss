@@ -131,11 +131,11 @@ body {
     display: flex;
     align-items: center;
     .element-light {
-        color: $color-main-light !important;
+        color: $color-main-light;
     }
     .element-dark,
     &.no-cover {
-        color: $color-main-light !important;
+        color: $color-main-light;
     }
     h1, h2, h3, h4, h5, h6 {
         color: inherit;
