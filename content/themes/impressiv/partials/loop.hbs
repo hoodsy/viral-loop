@@ -2,6 +2,9 @@
 {{#get "posts" limit="3" include="tags,author" filter="featured:true"}}
   {{> "tag-header" name="featured" url="/" iconPath="images/icons/icon-featured.svg"}}
   <div class="tag-row">
+    <span class="tag-name" style='display: none;'>
+      featured
+    </span>
     {{#foreach posts}}
       {{> "post-preview"}}
     {{/foreach}}
@@ -11,6 +14,9 @@
 {{#get "posts" limit="3" include="tags,author" filter="tags:politics"}}
   {{> "tag-header" name="politics" tagUrl="/tag/politics" iconPath="images/icons/icon-politics.svg"}}
   <div class="tag-row">
+    <span class="tag-name" style='display: none;'>
+      politics
+    </span>
     {{#foreach posts}}
       {{> "post-preview"}}
     {{/foreach}}
@@ -20,6 +26,9 @@
 {{#get "posts" limit="3" include="tags,author" filter="tags:nba"}}
   {{> "tag-header" name="nba" tagUrl="/tag/nba" iconPath="images/icons/icon-nba.svg"}}
   <div class="tag-row">
+    <span class="tag-name" style='display: none;'>
+      nba
+    </span>
     {{#foreach posts}}
       {{> "post-preview"}}
     {{/foreach}}
@@ -29,6 +38,9 @@
 {{#get "posts" limit="3" include="tags,author" filter="tags:startups"}}
   {{> "tag-header" name="startups" tagUrl="/tag/startups" iconPath="images/icons/icon-startups.svg"}}
   <div class="tag-row">
+    <span class="tag-name" style='display: none;'>
+      startups
+    </span>
     {{#foreach posts}}
       {{> "post-preview"}}
     {{/foreach}}
