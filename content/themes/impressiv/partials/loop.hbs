@@ -3,10 +3,7 @@
   {{> "tag-header" name="featured" url="/" iconPath="images/icons/icon-featured.svg"}}
   <div class="tag-row">
     {{#foreach posts}}
-      <span class="tag-name" style='display: none;'>
-        featured
-      </span>
-      {{> "post-preview"}}
+      {{> "post-preview" tag="featured"}}
     {{/foreach}}
   </div>
 {{/get}}
@@ -15,10 +12,7 @@
   {{> "tag-header" name="politics" tagUrl="/tag/politics" iconPath="images/icons/icon-politics.svg"}}
   <div class="tag-row">
     {{#foreach posts}}
-      <span class="tag-name" style='display: none;'>
-        politics
-      </span>
-      {{> "post-preview"}}
+      {{> "post-preview" tag="politics"}}
     {{/foreach}}
   </div>
 {{/get}}
@@ -27,10 +21,7 @@
   {{> "tag-header" name="nba" tagUrl="/tag/nba" iconPath="images/icons/icon-nba.svg"}}
   <div class="tag-row">
     {{#foreach posts}}
-      <span class="tag-name" style='display: none;'>
-        nba
-      </span>
-      {{> "post-preview"}}
+      {{> "post-preview" tag="nba"}}
     {{/foreach}}
   </div>
 {{/get}}
@@ -39,10 +30,7 @@
   {{> "tag-header" name="startups" tagUrl="/tag/startups" iconPath="images/icons/icon-startups.svg"}}
   <div class="tag-row">
     {{#foreach posts}}
-      <span class="tag-name" style='display: none;'>
-        startups
-      </span>
-      {{> "post-preview"}}
+      {{> "post-preview" tag="startups"}}
     {{/foreach}}
   </div>
 {{/get}}
