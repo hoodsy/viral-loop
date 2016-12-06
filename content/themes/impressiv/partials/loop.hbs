@@ -8,7 +8,7 @@
   </div>
 {{/get}}
 
-{{#get "posts" limit="3" include="tags,author" filter="tags:politics"}}
+{{#get "posts" limit="3" include="tags,author" filter="tags:politics+featured:false"}}
   {{> "tag-header" name="politics" tagUrl="/tag/politics" iconPath="images/icons/icon-politics.svg"}}
   <div class="tag-row">
     {{#foreach posts}}
@@ -17,7 +17,7 @@
   </div>
 {{/get}}
 
-{{#get "posts" limit="3" include="tags,author" filter="tags:nba"}}
+{{#get "posts" limit="3" include="tags,author" filter="tags:nba+featured:false"}}
   {{> "tag-header" name="nba" tagUrl="/tag/nba" iconPath="images/icons/icon-nba.svg"}}
   <div class="tag-row">
     {{#foreach posts}}
@@ -26,7 +26,7 @@
   </div>
 {{/get}}
 
-{{#get "posts" limit="3" include="tags,author" filter="tags:startups"}}
+{{#get "posts" limit="3" include="tags,author" filter="tags:startups+featured:false"}}
   {{> "tag-header" name="startups" tagUrl="/tag/startups" iconPath="images/icons/icon-startups.svg"}}
   <div class="tag-row">
     {{#foreach posts}}
