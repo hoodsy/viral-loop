@@ -340,8 +340,16 @@ body {
             color: $color-main-light;
         }
         .social-media-btns {
+            display: flex;
+            width: 100%;
             margin-top: $padding-vertical;
-            align-self: center;
+            .btn-social-media {
+                display: flex;
+                justify-content: center;
+                flex: 1;
+                background: none;
+                border: 1px solid $gray-darkest;
+            }
         }
     }
     .post-title {
