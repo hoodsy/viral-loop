@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-startups-alternate</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-startups-alternate" fill="#4B4B55">
+            <g id="icon-startup" transform="translate(4.000000, 0.000000)">
+                <path d="M11,15.418483 C13.9318303,14.2317082 16,11.3573776 16,8 C16,3.581722 12.418278,0 8,0 C3.581722,0 0,3.581722 0,8 C0,11.3573776 2.06816966,14.2317082 5,15.418483 L5,18.009222 C5,18.5490248 5.44358641,19 5.99077797,19 L10.009222,19 C10.5490248,19 11,18.5564136 11,18.009222 L11,15.418483 Z M5,20.5 C5,20.2238576 5.22788048,20 5.49100518,20 L10.5089948,20 C10.7801695,20 11,20.2319336 11,20.5 C11,20.7761424 10.7721195,21 10.5089948,21 L5.49100518,21 C5.21983051,21 5,20.7680664 5,20.5 Z M5,22.5 C5,22.2238576 5.22788048,22 5.49100518,22 L10.5089948,22 C10.7801695,22 11,22.2319336 11,22.5 C11,22.7761424 10.7721195,23 10.5089948,23 L5.49100518,23 C5.21983051,23 5,22.7680664 5,22.5 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
