@@ -146,7 +146,8 @@ body {
     }
     .post-logo-container,
     .author-logo-container {
-        padding: rem-calc(15) rem-calc(40);
+        // padding: rem-calc(15) rem-calc(40);
+        padding: $padding-vertical $padding-horizontal;
         img {
             max-width: rem-calc(180);
             max-height: rem-calc(180);
@@ -162,23 +163,63 @@ body {
     }
 }
 .main-header {
-    padding: rem-calc(120) rem-calc(30);
-    h1 {
-        font-size: rem-calc(60);
-        line-height: 1.2;
-        @media screen and (min-width: 48em) {
-            font-size: rem-calc(90);
+    .main-header-content {
+        background: rgba($color-main-dark, 0.7);
+    }
+    .author-meta {
+        padding: 0 $padding-horizontal $padding-vertical;
+        color: $white;
+    }
+    .author-title {
+        font-size: rem-calc(32);
+    }
+    .author-row {
+        display: flex;
+        justify-content: center;
+        height: 32px;
+        p:first-child {
+            margin-right: $padding-horizontal * 2;
         }
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin: ($padding-vertical / 4) 0;
+    }
+    .author-bio {
+        margin: ($padding-vertical / 2) 0 $padding-vertical;
+    }
+    .author-icon {
+        height: 18px;
+        margin-right: 5px;
     }
     .author-stats {
         font-size: rem-calc(20);
         font-family: $headers-font;
         font-weight: 700;
     }
+    .author-media-btns {
+        display: flex;
+    }
+    .btn-social-media {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        background: none;
+        border: 1px solid $white;
+    }
     @media screen and (min-width: 48em) {
-        padding: 12% rem-calc(30);
-        &.no-cover {
-            padding: 10% rem-calc(30);
+        .main-header-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .author-meta {
+            width: 500px;
+            border-radius: 5px;
         }
     }
 }
@@ -322,6 +363,9 @@ body {
             font-weight: 300;
         }
     }
+    .post-author-name {
+        color: $color-main-contrast;
+    }
     .post-meta {
         display: flex;
         flex-direction: column;
@@ -430,7 +474,7 @@ body {
             font-style: italic;
         }
         .author-link-name {
-            color: $color-main-dark;
+            color: $color-main-contrast;
             -webkit-transition: color .3s;
             transition: color .3s;
             &:active, &:hover, &:focus {
