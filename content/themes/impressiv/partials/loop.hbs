@@ -26,14 +26,14 @@
   </div>
 {{/get}}
 
-{{#get "posts" limit="3" include="tags,author" filter="tags:startups+featured:false"}}
+{{!-- {{#get "posts" limit="3" include="tags,author" filter="tags:startups+featured:false"}}
   {{> "tag-header" name="startups" tagUrl="/tag/startups" iconPath="images/icons/icon-startups.svg"}}
   <div class="tag-row">
     {{#foreach posts}}
       {{> "post-preview" tag="startups"}}
     {{/foreach}}
   </div>
-{{/get}}
+{{/get}} --}}
 
 
 {{! Previous/next page links - displayed on every page - this is a custom pagination partial}}
