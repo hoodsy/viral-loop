@@ -12,7 +12,7 @@
 <header class="post-meta row">
 
     <h1 class="post-title">{{title}}</h1>
-    
+
     <div class="post-author-date">
         <span class="post-author-name">{{author}}</span> -
         <time class="post-date"
@@ -21,9 +21,9 @@
         </time>
     </div>
 
-    <div class="post-tags">
+    {{!--<div class="post-tags">
         {{tags separator=""}}
-    </div>
+    </div> --}}
 
     <section class="social-media-btns">
       <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
@@ -44,15 +44,36 @@
 
 
 <main class="post-view-content" role="main">
-
     <article class="{{post_class}}">
 
         <section class="post-content row">
             <div class="small-12 columns">{{content}}</div>
         </section>
 
+        <div class="row post-prev-next-pagination">
+            <div class="prev small-6 columns text-left">
+                {{#prev_post}}
+                    <div class="prev-next-label">
+                        <a href="{{url}}">
+                            <i class="fa fa-angle-double-left"></i> Previous
+                        </a>
+                    </div>
+                    </a>
+                {{/prev_post}}
+            </div>
+            <div class="next small-6 columns text-right">
+                {{#next_post}}
+                    <div class="prev-next-label">
+                        <a href="{{url}}">
+                            Next <i class="fa fa-angle-double-right"></i>
+                        </a>
+                    </div>
+                {{/next_post}}
+            </div>
+        </div>
+
         {{! Everything inside the #author tags pulls data from the author }}
-        {{#author}}
+        <!-- {{#author}}
             <section class="author-info">
                 <div class="row">
                     <section class="post-author small-12 columns">
@@ -72,7 +93,7 @@
                     </section>
                 </div>
             </section>
-        {{/author}}
+        {{/author}} -->
 
         <section class="disqus">
             {{> disqus}}
