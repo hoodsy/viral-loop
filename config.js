@@ -12,7 +12,7 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://impressiv.io',
+        url: 'http://buzznation.co',
         mail: {},
         database: {
             client: 'sqlite3',
