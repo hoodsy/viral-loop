@@ -6,8 +6,6 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<article class="post-view-header {{#if image}}" style="background: url({{image}}); background-size: cover; {{else}}no-cover{{/if}}">
-</article>
 
 <header class="post-meta row">
 
@@ -21,9 +19,9 @@
         </time>
     </div>
 
-    {{!--<div class="post-tags">
+    <div class="post-tags">
         {{tags separator=""}}
-    </div> --}}
+    </div>
 
     <section class="social-media-btns">
       <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
@@ -42,8 +40,10 @@
 
 </header>
 
-
 <main class="post-view-content" role="main">
+
+  <article class="post-view-header {{#if image}}" style="background: url({{image}}); background-size: cover; {{else}}no-cover{{/if}}">
+  </article>
     <article class="{{post_class}}">
 
         <section class="post-content row">

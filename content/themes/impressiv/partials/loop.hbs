@@ -1,5 +1,5 @@
 {{! This is the post loop - each post will be output using this markup }}
-{{#get "posts" limit="10" include="tags,author" filter="featured:true"}}
+{{#get "posts" limit="18" include="tags,author" filter="featured:true"}}
   {{#foreach posts}}
     {{> "post-preview"}}
   {{/foreach}}

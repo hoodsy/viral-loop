@@ -1,9 +1,9 @@
-
+<div class="post-preview">
   <a href="{{url}}">
     <article class="{{post_class}} {{#if image}}" style="background: url({{image}}); background-size: cover; {{else}}no-cover{{/if}}">
     </article>
     <span class="post-image-url" style="display: none;">{{image}}</span>
-    {{!-- <span class="tag-name" style='display: none;'>{{tag}}</span> --}}
+    <span class="tag-name" style='display: none;'>{{tag}}</span>
   </a>
 
   <div class="meta-container">
@@ -16,8 +16,9 @@
           {{date format="MMM DD, YYYY"}}
         </time>
       </div>
-      <!-- <div class="post-tags">
+      <div class="post-tags">
         {{tags separator=""}}
-      </div> -->
+      </div>
     </footer>
   </div>
+</div>

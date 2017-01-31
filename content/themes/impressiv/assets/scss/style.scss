@@ -234,7 +234,7 @@ body {
         @media screen and (min-width: 48em) {
             display: flex;
             flex-wrap: wrap;
-            padding-right: $padding-horizontal;
+            // padding-right: $padding-horizontal;
         }
     }
     .post-container {
@@ -552,7 +552,7 @@ body {
     display: flex;
     align-items: center;
     padding: $padding-vertical $padding-horizontal;
-    margin-bottom: $padding-vertical-small;
+    // margin-bottom: $padding-vertical-small;
     background: $gray-darkest;
     color: $white;
     font-size: rem-calc(18);
@@ -820,4 +820,32 @@ body {
     .main-menu-ovrl ul li {
         min-height: rem-calc(34);
     }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  #content.home-template {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .post-preview {
+    flex: 1;
+    flex-basis: 30%;
+    margin: 5px;
+  }
+
+  .post-template .post-view-header {
+    width: 50rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+.post-template .post-view-header {
+  width: initial;
+  margin-bottom: 1.25rem;
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
 }
