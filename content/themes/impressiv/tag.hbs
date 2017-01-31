@@ -4,7 +4,7 @@
 {{! The main content area on the homepage }}
 <main id="content" class="content tag-template" role="main">
     {{> "tag-header" name=tag.name tagUrl=(concat '/tag/' tag.name '') iconPath=(concat 'images/icons/icon-' tag.name '.svg')}}
-    {{#get "posts" include="tags,author" filter="tags:{{tag.name}}"}}
+    {{#get "posts" include="tags,author" filter="tags:{{tag.name}}+featured:true"}}
       <div class="tag-row">
         {{#foreach posts}}
           {{> "post-preview"}}
