@@ -936,6 +936,10 @@ body {
   }
 
   .OUTBRAIN.OUTBRAIN-CONTENT-POST {
+    .ob-widget-section {
+      align-items: center;
+    }
+
     .TS_1.ob-widget {
       padding-top: 0;
       padding: 5px;
@@ -945,7 +949,7 @@ body {
   .OUTBRAIN.OUTBRAIN-CONTENT-SIDEBAR {
     .ob-widget-section {
       flex-direction: row;
-      
+
       .ob-widget-items-container {
         padding: 10px !important;
       }
