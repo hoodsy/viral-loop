@@ -46,12 +46,14 @@
     <article class="{{post_class}}">
 
       <!-- sidebar unit, place in right sidebar -->
-      <div class="OUTBRAIN" data-widget-id="TS_1" data-src="" data-ob-template="Buzznation" ></div>
+      <div class="OUTBRAIN OUTBRAIN-CONTENT-POST" data-widget-id="TS_1" data-src="" data-ob-template="Buzznation" ></div>
 
         <section class="post-content row">
             <div class="small-12 columns">{{content}}</div>
         </section>
 
+        <!-- below content unit, place below content -->
+        <div class="OUTBRAIN OUTBRAIN-CONTENT-SIDEBAR" data-widget-id="TF_6" data-src="" data-ob-template="Buzznation" ></div>
         <div class="row post-prev-next-pagination">
             <div class="prev small-6 columns text-left">
                 {{#prev_post}}
@@ -73,8 +75,6 @@
                 {{/next_post}}
             </div>
         </div>
-        <!-- below content unit, place below content -->
-        <div class="OUTBRAIN" data-widget-id="TF_6" data-src="" data-ob-template="Buzznation" ></div>
 
         {{! Everything inside the #author tags pulls data from the author }}
         <!-- {{#author}}
@@ -99,9 +99,11 @@
             </section>
         {{/author}} -->
 
+        {{!
         <section class="disqus">
             {{> disqus}}
         </section>
+        }}
 
     </article>
 
