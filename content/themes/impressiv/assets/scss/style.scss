@@ -855,12 +855,14 @@ body {
 
   .ob-widget-section {
     display: flex;
+    flex-direction: column;
   }
+
   .ob-widget-header {
     display: none;
   }
 
-  .TF_6.ob-widget {
+  .TF_1.ob-widget {
     padding-top: 0;
   }
 }
@@ -887,7 +889,7 @@ body {
 }
 
 .OUTBRAIN.OUTBRAIN-POST {
-  width: 50%;
+  width: 100%;
 
   .TS_1.ob-widget {
     padding-top: 0;
@@ -910,8 +912,9 @@ body {
   .OUTBRAIN.OUTBRAIN-POST,
   .OUTBRAIN.OUTBRAIN-SIDEBAR{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    width: 100%;
+    width: 50%;
 
     .ob-widget-section {
       padding-top: 10px;
@@ -922,10 +925,10 @@ body {
     }
 
     .TF_6.ob-widget {
-      padding-top: 0;
+      padding-top: 0 !important;
     }
     .TS_1.ob-widget {
-      padding-top: 0;
+      padding-top: 0 !important;
     }
   }
 
