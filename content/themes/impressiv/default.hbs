@@ -26,6 +26,9 @@
 
     {{! Modernizr }}
     <script src="{{asset "js/vendor/modernizr.js"}}"></script>
+    <!-- OUTBRAIN -->
+    <script type="text/javascript" async="async" src="https://widgets.outbrain.com/outbrain.js"></script>
+
 </head>
 <body class="{{body_class}}">
 
@@ -36,9 +39,8 @@
     </nav>
 
     {{{body}}}
-
     {{> "footer"}}
-    
+
     {{#if @blog.navigation}}
         {{navigation}}
     {{/if}}
