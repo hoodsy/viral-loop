@@ -894,6 +894,11 @@ body {
   }
 
   .ob-widget-section {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .ob-widget-section {
     display: flex;
   }
   .ob-widget-header {
@@ -902,6 +907,28 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .OUTBRAIN.OUTBRAIN-POST,
+  .OUTBRAIN.OUTBRAIN-SIDEBAR{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .ob-widget-section {
+      padding-top: 10px;
+
+      .ob-widget-items-container {
+        padding: 10px;
+      }
+    }
+
+    .TF_6.ob-widget {
+      padding-top: 0;
+    }
+    .TS_1.ob-widget {
+      padding-top: 0;
+    }
+  }
+
   .OUTBRAIN.OUTBRAIN-CONTENT-POST {
     .TS_1.ob-widget {
       padding-top: 0;
