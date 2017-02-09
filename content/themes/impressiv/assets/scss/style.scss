@@ -886,15 +886,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
-}
-.OUTBRAIN.OUTBRAIN-CONTENT-POST {
-  .TS_1.ob-widget {
-    padding-top: 0;
-    padding: 5px;
-  }
-}
-
 .OUTBRAIN.OUTBRAIN-POST {
   width: 50%;
 
@@ -907,5 +898,14 @@ body {
   }
   .ob-widget-header {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .OUTBRAIN.OUTBRAIN-CONTENT-POST {
+    .TS_1.ob-widget {
+      padding-top: 0;
+      padding: 5px;
+    }
   }
 }

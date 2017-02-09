@@ -1,12 +1,9 @@
 {{! This is the post loop - each post will be output using this markup }}
-<div class="OUTBRAIN OUTBRAIN-SIDEBAR" data-widget-id="TS_1" data-src="" data-ob-template="Buzznation" ></div>
 {{#get "posts" limit="18" include="tags,author" filter="featured:true"}}
   {{#foreach posts}}
     {{> "post-preview"}}
   {{/foreach}}
 {{/get}}
-<!-- below content unit, place below content -->
-<div class="OUTBRAIN OUTBRAIN-POST" data-widget-id="TF_6" data-src="" data-ob-template="Buzznation" ></div>
 
 {{!--
 {{#get "posts" limit="3" include="tags,author" filter="featured:true"}}
